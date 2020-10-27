@@ -1,0 +1,5 @@
+.cache
+package-lock.json
+node_modules/*
+coverage/*
+assets/animations/*
