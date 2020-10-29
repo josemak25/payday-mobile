@@ -79,6 +79,11 @@ const paperFontConfig = {
 
 export const paperTheme = {
   ...DefaultTheme,
+  colors: {
+    ...DefaultTheme.colors,
+    primary: COLORS.PRIMARY,
+    accent: COLORS.SECONDARY,
+  },
   // @ts-ignore
   fonts: configureFonts(paperFontConfig)
 };
