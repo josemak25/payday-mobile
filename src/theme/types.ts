@@ -9,7 +9,7 @@ enum COLORS {
   PRIMARY_TEXT = '#000000',
   WHITE_COLOR = '#FFFFFF',
   SECONDARY = '#B98875',
-  PRIMARY = '#CF9775'
+  PRIMARY = '#CF9775',
 }
 
 // All app font sizes

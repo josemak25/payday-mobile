@@ -1,22 +1,28 @@
 import * as React from 'react';
 import { TextInput } from 'react-native-paper';
-import { StyleSheet,View } from 'react-native';
+import { View } from 'react-native';
 
 interface TextInputProps {
     placeholder:string;
     icon:string,
+    color:string,
     label:string,
     width:string,
     height:string,
-    color:string,
-    validator:(input:string)=>boolean
+    fontSize:string,
+    placeholder_text_color:string,
+    border:string
 }
 
 const UserInput = (props:TextInputProps) => {
 
   return (
       <View >
-          <TextInput style={{width:props.width,height:props.height,color:props.color}}  label={props.label} underlineColorAndroid="transparent" />
+          <TextInput style={{width:props.width,height:props.height,color:props.color,borderColor:props.border}} 
+          placeholder={props.placeholder} 
+          placeholderTextColor={props.placeholder_text_color} 
+          label={props.label} 
+          underlineColorAndroid="transparent" />
       </View>
   )
 }
