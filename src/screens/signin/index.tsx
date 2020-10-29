@@ -9,6 +9,8 @@ import AppHeader from '../../components/AppHeader'
 import { Container, Welcome } from './styles';
 import AppFormInput from '../../components/AppFormInput';
 import AppButton from '../../components/AppButton';
+import AppHeaderStatOne from '../../components/AppHeaderStatOne';
+import AppHeaderStatTwo from '../../components/AppHeaderStatTwo';
 
 // DEFINE SCREEN PROP TYPES
 interface ScreenProp extends NavigationInterface {}
@@ -17,6 +19,7 @@ const call = {
   callText: "No account",
   callActionTitle: "Sign up"
 }
+
 
 const firstLabel = {
   labelText: "Full name"
@@ -46,6 +49,7 @@ export default function ProfileScreen(props: ScreenProp) {
 
           <AppFormInput
             labelText = {secondLabel.labelText}/>
+
 
           <AppButton
             labelText = {buttonLabel.label}
