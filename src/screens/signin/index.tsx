@@ -1,4 +1,5 @@
 import React from 'react';
+import FAButton from '../../components/fab';
 import { NavigationInterface } from '../types';
 
 // IMPORT FOR ALL CUSTOM STYLES
@@ -11,6 +12,7 @@ export default function ProfileScreen(props: ScreenProp) {
   return (
     <Container>
       <Welcome>Signin Screen Under Development</Welcome>
+      <FAButton onPress={()=> {}}/>
     </Container>
   );
 }

@@ -1,26 +1,27 @@
 import React from 'react';
-import { TextStyle, ViewStyle } from 'react-native';
 import { useAppTheme } from '../../theme';
-import { Styles } from './styles';
-import { FAB } from 'react-native-paper';
 
+import { Container } from './styles';
 
-interface FabProps {
-  label: string;
-  loading?: boolean;
-  style?: ViewStyle;
-  onClick: () => void;
-  contentStyle?: ViewStyle;
-  labelStyle?: TextStyle;
+type FabProps = {
+  onPress: () => void;
+};
+
+export default function FAButton(props: FabProps) {
+  const { colors } = useAppTheme();
+
+  return (
+    <Container
+      style={{
+        shadowColor: colors.PRIMARY,
+        shadowOpacity: 0.7,
+        shadowOffset: { width: 0, height: 10 },
+        shadowRadius: 10,
+        elevation: 20
+      }}
+      color={colors.WHITE_COLOR}
+      icon="plus"
+      onPress={props.onPress}
+    />
+  );
 }
-const FAButton = ()=> {
-  <FAB
-    style={Styles.fab}
-    small
-    color= '#FFFFFF'
-    icon= "plus"
-    onPress={() => console.log('Fab Pressed')}
-  />
-}
-  
-export default FAButton
