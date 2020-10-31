@@ -1,24 +1,30 @@
 import React from 'react';
-import {Image, View} from 'react-native'
+import { Image } from 'react-native';
 
-import {Container, LeftView, RightView, Price, Date, Time, ImageContainer} from './styles'
+import {
+  Container,
+  CardView,
+  Price,
+  Date,
+  Time,
+  Naira,
+  PriceWrapper
+} from './styles';
 
-
-export default function CreditCard({price, date, time}) {
-    return (
-        <Container>
-            <LeftView>
-                <ImageContainer>
-                    <Image source={require('../../../assets/images/logo.png')} />
-                </ImageContainer>
-                <Price>{price}</Price>
-            </LeftView>
-            <RightView>
-                <Date>{date}</Date>
-                <Time>{time}</Time>
-            </RightView>
-        </Container>
-    )
+export default function CreditCard({ price, date, time }) {
+  return (
+    <Container>
+      <CardView>
+        <Image source={require('../../../assets/images/logo.png')} />
+        <Date>{date}</Date>
+      </CardView>
+      <CardView>
+        <PriceWrapper>
+          <Naira>&#8358;</Naira>
+          <Price>{price}</Price>
+        </PriceWrapper>
+        <Time>{time}</Time>
+      </CardView>
+    </Container>
+  );
 }
-
-
