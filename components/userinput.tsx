@@ -1,31 +1,34 @@
 import * as React from 'react';
 import { TextInput } from 'react-native-paper';
-import { View } from 'react-native';
+import { View,StyleSheet } from 'react-native';
+import { Theme } from 'react-native-paper/lib/typescript/src/types';
 
 interface TextInputProps {
     placeholder:string;
-    icon:string,
-    color:string,
     label:string,
     width:string,
-    height:string,
-    fontSize:string,
-    placeholder_text_color:string,
-    border:string
+    height:string
 }
 
 const UserInput = (props:TextInputProps) => {
 
   return (
-      <View >
-          <TextInput style={{width:props.width,height:props.height,color:props.color,borderColor:props.border}} 
+      <View style={styles.ViewStyle}>
+          <TextInput style={{width:props.width,height:props.height,color:"#FDE9DA65",borderColor:"#000000",borderStyle:"solid"}} 
           placeholder={props.placeholder} 
-          placeholderTextColor={props.placeholder_text_color} 
           label={props.label} 
           underlineColorAndroid="transparent" />
       </View>
   )
 }
+
+const styles=StyleSheet.create({
+    ViewStyle:{
+
+    }
+})
+
+
 
 
 export default UserInput;
