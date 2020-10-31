@@ -13,26 +13,14 @@ interface FabProps {
   contentStyle?: ViewStyle;
   labelStyle?: TextStyle;
 }
-
-export default function (props: FabProps) {
-  const {
-    label = 'save',
-    loading = false,
-    style,
-    contentStyle,
-    labelStyle,
-    onClick
-  } = props;
-
-  const { fonts, colors } = useAppTheme();
-
-  return (
-    <FAB
+const FAButton = ()=> {
+  <FAB
     style={Styles.fab}
     small
     color= '#FFFFFF'
     icon= "plus"
     onPress={() => console.log('Fab Pressed')}
   />
-  );
 }
+  
+export default FAButton
