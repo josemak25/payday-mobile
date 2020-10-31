@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 import { Title } from 'react-native-paper';
+import { StyleSheet } from 'react-native';
 
 export const Container = styled.View`
   flex: 1;
@@ -14,3 +15,4 @@ export const Welcome = styled(Title)`
   color: ${({ theme }) => theme.colors.PRIMARY_TEXT};
   text-transform: capitalize;
 `;
+
