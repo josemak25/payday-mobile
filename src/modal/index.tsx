@@ -1,12 +1,8 @@
 import React from 'react';
-import { View, TouchableOpacity, Text } from 'react-native';
-
-import { TextInput, Modal, Portal, Provider } from 'react-native-paper';
+import Button from '../components/button';
+import {Modal, Portal, Provider } from 'react-native-paper';
 import {
   Container,
-  ModalContainer,
-  ModalInput,
-  TouchableButton,
   TopView,
   BottomView,
   ModalTitle
@@ -29,9 +25,7 @@ export default function ModalCard() {
             }}
           >
             <TopView>
-              <ModalTitle>
-                Quickly setup a credit
-              </ModalTitle>
+              <ModalTitle>Quickly setup a credit</ModalTitle>
               {/* <ModalInput
                 theme={{ colors: { PRIMARY: '#000'} }}
                 mode="outlined"
@@ -42,11 +36,8 @@ export default function ModalCard() {
             </TopView>
 
             <BottomView>
-              <TouchableButton>
-                <Text style={{ color: '#fff' }}>Save</Text>
-              </TouchableButton>
+              <Button label="Save" onClick={() => {}} />
             </BottomView>
-        
           </Modal>
         </Portal>
       </Container>
