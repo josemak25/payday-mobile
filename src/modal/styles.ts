@@ -1,4 +1,3 @@
-import { TouchableOpacity } from 'react-native-gesture-handler';
 import { TextInput } from 'react-native-paper';
 import styled from 'styled-components/native';
 
@@ -12,7 +11,7 @@ export const Container = styled.View`
 export const ModalContainer = styled.View`
 justify-content: center;
 align-items: center;
-background-color: white;
+background-color: ${({ theme }) => theme.colors.WHITE_COLOR};
 border-radius:10px
 `
 
@@ -24,14 +23,13 @@ align-self: center;
 height: 60
 `
 
-export const TouchableButton = styled(TouchableOpacity)`
+export const TouchableButton = styled.View`
 width: 100%;
-border-radius: 30;
-background-color: #CF9775;
-height: 50;
+border-radius: 30px;
+height: 50px;
 align-items: center;
 justify-content: center;
-align-self: center
+align-self: center;
 `
 
 export const TopView = styled.View`

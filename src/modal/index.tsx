@@ -32,13 +32,13 @@ export default function ModalCard() {
               <ModalTitle>
                 Quickly setup a credit
               </ModalTitle>
-              <ModalInput
-                theme={{ colors: { PRIMARY: '#000', placeholder: '#000' } }}
+              {/* <ModalInput
+                theme={{ colors: { PRIMARY: '#000'} }}
                 mode="outlined"
                 label="New Credit"
                 placeholder="Credit Amount"
                 placeholderTextColor="#00000040"
-              />
+              /> */}
             </TopView>
 
             <BottomView>
@@ -46,7 +46,7 @@ export default function ModalCard() {
                 <Text style={{ color: '#fff' }}>Save</Text>
               </TouchableButton>
             </BottomView>
-            {/* </View> */}
+        
           </Modal>
         </Portal>
       </Container>

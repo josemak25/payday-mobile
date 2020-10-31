@@ -9,20 +9,17 @@ import ModalCard from './src/modal'
 enableScreens();
 
 export default function App() {
-  return(
-    <ModalCard/>
-  );
-  // const [isAppReady, setIsAppReady] = useState(false);
+  const [isAppReady, setIsAppReady] = useState(false);
 
-  // useEffect(() => {
-  //   loadApp();
-  // }, []);
+  useEffect(() => {
+    loadApp();
+  }, []);
 
-  // const loadApp = async () => {
-  //   await loadResources();
-  //   setIsAppReady(true);
-  // };
+  const loadApp = async () => {
+    await loadResources();
+    setIsAppReady(true);
+  };
  
-  // return isAppReady ? <AppRouter /> : null;
+  return isAppReady ? <AppRouter /> : null;
   
 }
