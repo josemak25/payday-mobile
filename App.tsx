@@ -4,6 +4,8 @@ import loadResources from './src/libs/loadResources';
 import AppRouter from './src';
 import './src/config';
 
+import ModalCard from './src/modal'
+
 enableScreens();
 
 export default function App() {
@@ -17,6 +19,7 @@ export default function App() {
     await loadResources();
     setIsAppReady(true);
   };
-
+ 
   return isAppReady ? <AppRouter /> : null;
+  
 }

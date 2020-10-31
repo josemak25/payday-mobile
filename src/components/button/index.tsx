@@ -22,6 +22,7 @@ export default function Button(props: ButtonProps) {
     labelStyle,
     onClick
   } = props;
+
   const { fonts, colors } = useAppTheme();
 
   return (
