@@ -7,9 +7,10 @@ enum COLORS {
   PRIMARY_LIGHT = '#CF97756F',
   SECONDARY_TEXT = '#CF9775',
   PRIMARY_TEXT = '#000000',
+  INPUT_COLOR = '#FDE9DA65',
   WHITE_COLOR = '#FFFFFF',
   SECONDARY = '#B98875',
-  PRIMARY = '#CF9775',
+  PRIMARY = '#CF9775'
 }
 
 // All app font sizes
@@ -32,6 +33,7 @@ declare module 'styled-components' {
       PRIMARY: string;
       SECONDARY: string;
       WHITE_COLOR: string;
+      INPUT_COLOR: string;
       PRIMARY_TEXT: string;
       PRIMARY_LIGHT: string;
       SECONDARY_TEXT: string;
